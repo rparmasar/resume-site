@@ -1,0 +1,35 @@
+12/16/19===========
+Created array to hold Star objects
+Created Star objects with draw and update methods
+
+Need to animate properly, find a way to properly implement incrementing of dx and dy
+
+1/6/20=============
+Animation working properly, randomized sizes of stars
+Created rough content for page
+Created layout for all sections using Grid
+
+1/14/20============
+Created About me animation
+Added "Cool things I learned" in About Me
+Changed background and hover effects for Projects
+Filled in information for Projects
+Added ScrollSpy for navbar
+Linked animate.css for header animations
+Made responsive layout using Bootstrap 3
+
+
+
+
+
+To Do: 
+Neaten up js
+Animations for headers on scrolling!
+Put social links in Contact me!
+Finish Resume section with maybe preview and download!
+Learn command line git
+
+
+
+
+	
