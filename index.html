@@ -4,41 +4,176 @@
         <meta charset="utf-8"/>
         <meta http-equiv="Content Type" content="text/html; charset=utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Rajeev Parmasar</title>
         <!--Link to JQuery Provider-->
 		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js">
         </script>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">        
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="sitejs.js" defer></script>
         <link rel="stylesheet" type="text/css" href="sitestyles.css">
+        <!-- External Stylesheets -->
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
     </head>
     <header>
-        <div class="nav-top">
+        <!-- <div class="nav-top">
             <nav id="top-nav">
                 <button class="nav-button">About me</button>
                 <button class="nav-button">Projects</button>
                 <button class="nav-button">Resume</button>
                 <button class="nav-button">Contact</button>
             </nav>
-        </div>
+        </div> -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="#">Rajeev Parmasar</a>
+              </div>
+              <div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                  <ul class="nav navbar-nav">
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav> 
     </header>
-    <body>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
         <div id="intro" class="main-background">
             <div id="intro-text">
                 <h1>Hi, I'm Rajeev Parmasar!</h1>
-                <p>I'm currently a second year student studying mathematics at the University of Waterloo.</p>
+                <p>I'm currently a second year student studying Statistics at the University of Waterloo.</p>
             </div>
             <canvas id="main-canvas"></canvas>
-            <canvas id="main-stars"></canvas>
         </div>
-       <div id="about-me">
-           <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi doloremque, doloribus placeat mollitia, quo ipsa aliquid sint possimus perferendis reprehenderit molestiae consequuntur necessitatibus iure officiis dolore sapiente neque laudantium assumenda.</h1>
-       </div>
-       <div id="projects">
-
+       <div class="container-fluid" id="about-me">
+            <div class ="section-title">
+                <h1>About Me</h1>
+            </div>
+            <div class="row" id="about-me-container">
+                <div class="col-sm-4 col-lg-4" id = "about-me-text">
+                <h2>Who am I?</h2>
+                <p>Hi, I'm Rajeev. I'm originally from Trinidad and Tobago, a twin island republic in the Caribbean but I'm presently studying in Canada. I like Math and I'm currently an undergrad student at the University of Waterloo majoring in Statistics. I love designing things and learning how to bring them to life (like this site).</p>
+                </div>
+                <div class="col-sm-7 col-lg-4" id="about-me-canvas-container">
+                    <canvas id="about-me-canvas"></canvas>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-4" id="about-me-skills">
+                        <h2>Cool things I've learned</h2>
+                        <ul id="about-me-skills-list">
+                            <li>HTML5, CSS3 & JavaScript 6</li>
+                            <li>Bootstrap 3</li>
+                            <li>WCAG 2.0</li>
+                            <li>PowerShell 6</li>
+                            <li>R</li>
+                            <li>Python</li>
+                            <li>SQL</li>
+                            <li>C & C++</li>
+                            <li>AutoCAD 2015</li>
+                            <li>Microsoft Office Suite</li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+           </div>
+       <div class="container-fluid" id="projects">
+           <div class="section-title">
+               <h1>Projects</h1>
+           </div>
+           <div class="project-container row">
+                <div class="project col-sm-12 col-md-4">
+                   <div class="project-title">
+                        <h2>Arts Printers</h2>
+                   </div>
+                   <div class="project-skills">
+                        <p>Main Skills: PowerShell 6, HTML5, CSS3 Javascript 6</p>
+                   </div>
+                   <div class="project-text">
+                    <p>Created a PowerShell script which generates a webpage showing a table of properties of all network printers managed by the faculty of Arts. It features a table which can be filtered using a search bar and also an installation help modal which allows the user to generate a path based on their operating system and copy it to their clipboard for easy installation.</p>
+                   </div>
+                </div>
+                <div class="project col-sm-12 col-md-4">
+                    <div class="project-title">
+                         <h2>Personal Site</h2>
+                    </div>
+                    <div class="project-skills">
+                       <p>Main Skills: HTML5, CSS3, Javascript 6</p>
+                   </div>
+                    <div class="project-text">
+                     <p>Created a personal website which uses canvas animations, grid layout and Bootstrap 3. It gives some information about myself, my projects and ways to get in touch.</p>
+                    </div>
+                 </div>
+                 <div class="project col-sm-12 col-md-4">
+                    <div class="project-title">
+                         <h2>Investigation into the mean mass of the Twin Crunch chocolate bar</h2>
+                    </div>
+                    <div class="project-skills">
+                        Main Skills: Z-test hypothesis test for one mean
+                   </div>
+                    <div class="project-text">
+                     <p>Conducted a study to determine the mean mass of the Twin Crunch, a local chocolate bar. Constructed a 96% confidence interval for the mass which turned out to be less than the advertised amount.</p>
+                    </div>
+                 </div>
+           </div>
+           <div class="project-container row">
+                 <div class="project col-sm-12 col-md-4">
+                    <div class="project-title">
+                         <h2>Investigation into event planning and distributions of ticket sales</h2>
+                    </div>
+                    <div class="project-skills">
+                        Main Skills: Critical path analysis, Goodness of fit test for a binomial distribution
+                   </div>
+                    <div class="project-text">
+                     <p>Determined the most optimal sequence of events to maximize 20 days of preparation for my school fair. Performed a chi-squared goodness of fit test for a binomial distribution to determine if ticket sales followed this distribution. These were then used to assess profitability of the fair.</p>
+                    </div>
+                 </div>
+                 <div class="project col-sm-12 col-md-4">
+                    <div class="project-title">
+                         <h2>Chopsticks Game</h2>
+                    </div>
+                    <div class="project-skills">
+                        Main Skills: C++
+                   </div>
+                    <div class="project-text">
+                     <p>Created an imperative implementation of Chopsticks, an adding game where the objective is to not have zero fingers on each hand.</p>
+                    </div>
+                 </div>
+                 <div class="project col-sm-12 col-md-4">
+                    <div class="project-title">
+                         <h2>Drill Press</h2>
+                    </div>
+                    <div class="project-skills">
+                        Main Skills: AutoCAD 15, Design, Sketching
+                    </div>
+                    <div class="project-text">
+                     <p>Designed and drafted a drill press which features an O-ring to fit multiple drill sizes as well as a compressible spring for height adjustment. Drafted the front elevation, left elevation and plan as well as created a 3D model using AutoCAD 15.</p>
+                    </div>
+                 </div>
+                </div>
+           </div>
        </div>
        <div id="resume">
-
+           <div class="section-title">
+               <h1>Resume</h1>
+           </div>
+           <div class="resume-container">
+               <p>A PDF link to my resume
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tenetur incidunt molestiae accusamus optio dignissimos cumque expedita amet necessitatibus nemo totam voluptate natus, labore impedit illum dolorum. Omnis, nihil velit.
+               </p>
+           </div>
        </div> 
     </body>
 </html>
