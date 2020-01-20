@@ -1,5 +1,0 @@
-12/16/19===========
-Created array to hold Star objects
-Created Star objects with draw and update methods
-
-Need to animate properly, find a way to properly implement incrementing of dx and dy	
