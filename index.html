@@ -18,6 +18,8 @@
         <!-- External Stylesheets -->
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <header>
         <!-- <div class="nav-top">
@@ -43,7 +45,7 @@
                   <ul class="nav navbar-nav">
                     <li><a href="#about-me">About Me</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#resume">Resume & Contact</a></li>
                   </ul>
                 </div>
               </div>
@@ -71,12 +73,11 @@
                     <canvas id="about-me-canvas"></canvas>
                 </div>
                 <div class="row">
-                    <div class="col-sm-6 col-md-6 col-lg-4" id="about-me-skills">
+                    <div class="col-sm-12 col-md-6 col-lg-3" id="about-me-skills">
                         <h2>Cool things I've learned</h2>
                         <ul id="about-me-skills-list">
                             <li>HTML5, CSS3 & JavaScript 6</li>
                             <li>Bootstrap 3</li>
-                            <li>WCAG 2.0</li>
                             <li>PowerShell 6</li>
                             <li>R</li>
                             <li>Python</li>
@@ -84,6 +85,7 @@
                             <li>C & C++</li>
                             <li>AutoCAD 2015</li>
                             <li>Microsoft Office Suite</li>
+                            <li>WCAG 2.0</li>
                         </ul>
                     </div>
                 </div>
@@ -169,11 +171,21 @@
            <div class="section-title">
                <h1>Resume</h1>
            </div>
-           <div class="resume-container">
-               <p>A PDF link to my resume
-                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tenetur incidunt molestiae accusamus optio dignissimos cumque expedita amet necessitatibus nemo totam voluptate natus, labore impedit illum dolorum. Omnis, nihil velit.
-               </p>
+           <div class="resume-container row">
+               <div class="col-sm-12 col-lg-4" id="resume-text">
+                   <h4>Here is my resume, click on the top right to enlargen and open in a new tab.</h4>
+                   <div class="row" id="contact-text">
+                    <h2>Let's Get in Touch</h2>
+                    <p class="contact-link col-sm-12"><i class="material-icons">email</i>rajeev@parmasar.com</p>
+                    <p class="contact-link col-sm-12"><i class="material-icons">phone_android</i>+1 416 434 7586</p>
+                    <button class="contact-btn col-sm-12"><i class='fa fa-github'></i><a href="https://github.com/rparmasar" target="_blank">Github</a></button>
+                    <button class="contact-btn col-sm-12"><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/rajeev-parmasar-b20352187/" target="_blank">LinkedIn</a></button>
+                </div>
+               </div>
+               <div class="col-sm-12 col-lg-8" id="resume-drive">
+                <iframe id="resume-iframe" src="https://drive.google.com/file/d/1yTWQ0wiglIb3uV6USPdCYXjsgHRABgVH/preview" width="100%" height="500px"></iframe>
+               </div>
            </div>
-       </div> 
+       </div>
     </body>
 </html>
