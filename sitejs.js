@@ -156,3 +156,12 @@ function isElementInViewport(el) {
       rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
   );
 }
+
+// Prevents scrolling on mobile
+var fixed = document.getElementsByTagName('body');
+
+fixed.addEventListener('touchmove', function(e) {
+
+        e.preventDefault();
+
+}, false);

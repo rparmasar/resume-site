@@ -222,3 +222,9 @@ body{
 .row{
     margin-left: 0;
 }
+
+.test {
+    height: 100vh;
+    width: 100%;
+    /* background-image: linear-gradient(#283A50,#202328); */
+}
